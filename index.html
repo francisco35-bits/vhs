@@ -46,9 +46,9 @@
             padding: 0.5rem 1rem;
         }
 
-        .logo {
-            font-size: 1.5rem;
-            color: white;
+        .pokemon {
+            width: 100px;
+            height: auto;
         }
 
         .nav-links {
@@ -80,6 +80,38 @@
             opacity: 25%;
             z-index: 10;
             animation:  shift 0.2s linear infinite both;
+        }
+
+
+        
+
+        .poke{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.5em 25em;
+        }
+
+        .prueba{
+            width: 100px;
+            height: auto;
+        }
+
+        .prueba-2{
+            width: 100px;
+            height: auto;
+        }
+
+        .prueba-3{
+            width: 180px;
+            height: auto;
+        }
+
+        .titulo-2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0.5em;
         }
         @media only screen and (max-width:320px){
             nav {
@@ -129,13 +161,33 @@
                 transform: translateX(-10%) translateY(-10%);
             }
         }
+
+        @media only screen  and (max-width:756px) {
+            .poke{
+                margin-top: 150px;
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-between;
+            }
+
+            .gengar{
+                width: 100px;
+                display: block;
+            }
+
+            .titulo-2{
+                display: flex;
+                justify-content: center;
+                margin-top: 140px;
+            }
+        }
     </style>
 <body>
     <div class="container">
         <div class="content">
             <div>
                 <nav>
-                    <h2 class="logo">SPKIDE</h2>
+                    <img src="7e3b67c53469cc4302035be70a7f2d60.gif" alt="" class="pokemon">
                     <ul class="nav-links">
                         <li><a href="#">Inicio</a></li>
                         <li><a href="#">Información</a></li>
@@ -149,6 +201,16 @@
             </div>
         </div>
         <div class="fuzzy-overlay"></div>
+        <section>
+            <div>
+                <h2 class="titulo-2">BIENVENIDO A SPKIDE</h2>
+                <div class="poke">
+                    <img src="pokemon-anime.gif" alt="prueba" class="gengar">
+                    <img src="7fd35eac56fc6a8586298a6ed2ce9e85.gif" alt="prueba" class="prueba-2">
+                    <img src="6700a5c64d66f46ff71111d4a700b2ff.gif" alt="prueba" class="prueba-3">
+                </div>
+            </div>
+        </section>
     </div>
 </body>
 </html>
